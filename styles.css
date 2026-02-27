@@ -1,66 +1,82 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+  background: #F5F5F7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  gap: 20px;
 }
 
-/* Global Styles */
-body {
-    background-color: #F5F5F7;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+header {
+  color: #002E66;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #002E66;
+button {
+  background: #0099FF;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  padding: 10px 20px;
+  transition: background 0.3s;
 }
 
-/* Button Styles */
-.button {
-    background-color: #0099FF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s;
+button:hover {
+  background: #006EF2;
 }
 
-.button:hover {
-    background-color: #006EF2;
-}
-
-/* Success and Warning Styles */
 .success {
-    background-color: #ABE8E5;
-    color: #00575B;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #ABE8E5;
+  color: #0A3847;
 }
 
-.warning {
-    background-color: #FF8221;
-    color: #FFF;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.error {
+  background: #FF8221;
+  color: #450D0A;
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) {
-    .container {
-        padding: 40px;
-    }
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  background: white;
 }
 
-/* Course Phase Styles */
-.course-phase {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.progress-bar {
+  height: 20px;
+  border-radius: 16px;
+  background: #E0E0E0;
+}
+
+.progress {
+  height: 100%;
+  background: #0099FF;
+  border-radius: 16px;
+}
+
+.badge {
+  background: #0099FF;
+  color: white;
+  border-radius: 16px;
+  padding: 5px 10px;
+}
+
+.tab {
+  border-bottom: 2px solid #0099FF;
+}
+
+.quiz {
+  margin: 20px 0;
+}
+
+.interactive-element {
+  transition: transform 0.3s;
+}
+
+.interactive-element:hover {
+  transform: scale(1.05);
+}
+
+.milestone-tracker,
+.performance-analytics,
+.certification-panel {
+  margin: 20px 0;
 }
