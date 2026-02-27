@@ -1,0 +1,66 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background-color: #F5F5F7;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #002E66;
+}
+
+/* Button Styles */
+.button {
+    background-color: #0099FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #006EF2;
+}
+
+/* Success and Warning Styles */
+.success {
+    background-color: #ABE8E5;
+    color: #00575B;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.warning {
+    background-color: #FF8221;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+/* Course Phase Styles */
+.course-phase {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
